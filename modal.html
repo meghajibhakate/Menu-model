@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu Modal2</title>
+    <link rel="stylesheet" href="newModal.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="box1">
+
+            <div id="div1">
+                <h1>Registration Form</h1>
+            </div>
+
+
+            <div id="div2">
+
+                <div class="info" >
+                    <label id="label">Full Name</label>
+                    <input type="text" id="input" placeholder="Name">
+                    <label id="label">Email</label>
+                    <input type="text" id="input" placeholder="Email">
+                    <label id="label">Password</label>
+                    <input type="text" id="input" placeholder="Password">
+                </div>
+
+
+                <div class="info">
+                    <label id="label">User Name</label>
+                    <input type="text" id="input" placeholder="UserName">
+                    <label id="label">Phone Number</label>
+                    <input type="text" id="input" placeholder="Phone Number">
+                    <label id="label">Confirm Password</label>
+                    <input type="text" id="input" placeholder="Confirm Password">
+                </div>
+
+            </div>
+
+
+            <div id="div3">
+                <label id="label">Please select your Gender</label>
+                <div>
+                    <input type="radio" name="gender" value="Male">
+                    <label for="Male">Male</label><br>
+                    <input type="radio" name="gender" value="Femal">
+                    <label for="Femal">Femal</label><br>
+                    <input type="radio" name="gender" value="other">
+                    <label for="Other">Other</label>
+                </div>
+            </div>
+
+            <br>
+            <button onclick="modol_box()" id="sub" type="button">SUBMIT</button>
+
+
+        </form>
+
+
+        <div id="simplModol" class="modol">
+            <div class="modol-content">
+                <div id="head">
+                    <h1>Congraculation 😊</h1>
+                </div>
+
+                <p>Your form is successfully register</p>
+                <button onclick="modol_box_close()" id="closeBtn">0k</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="modal.js"></script>
+</body>
+
+</html>
